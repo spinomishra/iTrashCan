@@ -1,9 +1,9 @@
 #pragma once
 
 struct Color {
-	float R;
-	float G;
-	float B;
+	uint16_t R;
+	uint16_t G;
+	uint16_t B;
 	int WhiteLight;
 };
 
