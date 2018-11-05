@@ -76,6 +76,7 @@ typedef void *__builtin_va_list;
 #define pgm_read_ptr(address_short)   short()
 
 #include "iTrashCan_prototype.ino"
-#include "Logging.ino"
+#include "Color.ino"
+#include "Movement.ino"
 #endif
 #endif

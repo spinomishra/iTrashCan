@@ -1,7 +1,7 @@
 #pragma once
 
 // Left Motor
-int leftMotorEnablePin = 9;
+int leftMotorEnablePin =9;
 int leftMotorInput1 = 8;
 int leftMotorInput2 = 7;
 
