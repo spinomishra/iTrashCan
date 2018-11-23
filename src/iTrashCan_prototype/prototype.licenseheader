@@ -1,0 +1,29 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .resx
+#region LicenceHeader
+//
+// ©Copyright %CurrentYear%, Dell Inc., All Rights Reserved.
+// This material is confidential and a trade secret.  Permission to use this
+// work for any purpose must be obtained in writing from Dell Inc.
+//
+// %FileName% created by %UserName% on %CurrentMonth%/%CurrentDay%/%CurrentYear%T%CurrentTime%
+//
+#endregion
+extensions: .h .cpp .ino
+//
+// ©Copyright %CurrentYear%, Dell Inc., All Rights Reserved.
+// This material is confidential and a trade secret.  Permission to use this
+// work for any purpose must be obtained in writing from Dell Inc.
+//
+// %FileName% created by %UserName% on %CurrentMonth%/%CurrentDay%/%CurrentYear%T%CurrentTime%
+//
+extensions: .aspx .ascx
+<%--
+Copyright (c) 2011 rubicon IT GmbH
+--%>
+extensions: .vb
+'Sample license text.
+extensions:  .xml .config .xsd
+<!--
+Sample license text.
+-->

@@ -78,5 +78,6 @@ typedef void *__builtin_va_list;
 #include "iTrashCan_prototype.ino"
 #include "Color.ino"
 #include "Movement.ino"
+#include "Obstruction.ino"
 #endif
 #endif

@@ -1,7 +1,12 @@
+﻿//
+// ©Copyright 2018, All Rights Reserved.
+//
+// ColorDefinitions.h created by spinomishra on 10/‎29/‎2018T‏‎6:00 PM
+//
 #pragma once
 
 // Left Motor
-int leftMotorEnablePin =9;
+int leftMotorEnablePin =11;
 int leftMotorInput1 = 8;
 int leftMotorInput2 = 7;
 
@@ -9,9 +14,6 @@ int leftMotorInput2 = 7;
 int rightMotorEnablePin = 3;
 int rightMotorInput1 = 5;
 int rightMotorInput2 = 4;
-
-int turnspeed;
-
 
 // Ultrasonic sensor
 #define TRIGGER_PIN				13  /* sends sound wave */

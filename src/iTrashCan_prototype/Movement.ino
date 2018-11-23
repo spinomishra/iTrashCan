@@ -1,40 +1,57 @@
-DriveState CurrentTrashCanMovement = DriveState::Stop;
+//
+// ©Copyright 2018, All Rights Reserved.
+//
+// ColorDefinitions.h created by spinomishra on 11/4/2018T12:28 PM
+//
+
+MovementState CurrentTrashCanMovement = MovementState::Stop;
+
+MovementState DetermineMoveDirection(Color color)
+{
+	int R = color.R;
+	int G = color.G;
+	int B = color.B;
+
+	// amount of white light plays a big light in the color value for RGB. More white light 
+	// we have, better the color value we get. The less light we have lower the values.
+	int threshold_R = (color.WhiteLight < 100) ? 50 : 135;
+	int threshold_G = (color.WhiteLight < 100) ? 25 : 60;
+	int threshold_B = (color.WhiteLight < 100) ? 30: 90;
+
+	if (R >= threshold_R && R > B && R > G)  // Red dominance
+	{
+		Serial.println("Red Dominance :");
+		return MovementState::Stop;
+	}
+
+	if (G >= threshold_G && G >= B)  // Green dominance
+	{
+		Serial.println("Green Dominance :");
+		return MovementState::BackupAndTurnLeft;
+	}
+
+	if (B >= threshold_B && B > R && B >= G)  // Blue dominance
+	{
+		Serial.println("Blue Dominance :");
+		return MovementState::BackupAndTurnRight;
+	}
+
+	return MovementState::GoForward;
+}
 
 // Determining the path direction for the trash bin to or from curb side
-DriveState DetermineTrashCanMovement(const ControlData& controlData)
+MovementState DetermineTrashCanMovement(const ControlData& controlData)
 {
 	// go back if there is an obstruction within 15 cm
 	if (controlData.obstructionDistance != 0 && controlData.obstructionDistance <= SAFEDISTANCE)
-		return DriveState::GoBack;
+		return MovementState::Obstruction;
 
-	CurrentTrashCanMovement = DriveState::GoForward;
-
-	int R = controlData.color.R;
-	int G = controlData.color.G;
-	int B = controlData.color.B;
-
-	if (R >= 135 && R > B && R > G)  // Red dominance
-	{
-		Serial.println("Red Dominance :");
-		CurrentTrashCanMovement = DriveState::Stop;
-	}
-
-	if (G >= 60 && G >= B)  // Green dominance
-	{
-		Serial.println("Green Dominance :");
-		CurrentTrashCanMovement = DriveState::TurnLeft;
-	}
-
-	if (B >= 90 || B > R && B >= G)  // Blue dominance
-	{
-		Serial.println("Blue Dominance :");
-		CurrentTrashCanMovement = DriveState::TurnRight;
-	}
+	CurrentTrashCanMovement = DetermineMoveDirection(controlData.color);
 
 	return CurrentTrashCanMovement;
 }
 
-void TurnToAvoidObstruction(int turnangle, DriveState turnDirection)
+void TurnToAvoidObstruction(int turnangle, MovementState turnDirection)
 {
 	int turnspeed = 255;
 
@@ -54,9 +71,9 @@ void TurnToAvoidObstruction(int turnangle, DriveState turnDirection)
 
 	switch (turnDirection)
 	{
-	case DriveState::TurnLeft:
+	case MovementState::TurnLeft:
 		Serial.println("Turning left to avoid obstruction");
-		analogWrite(leftMotorEnablePin, 100);
+		analogWrite(leftMotorEnablePin, 150);
 		digitalWrite(leftMotorInput1, HIGH);
 		digitalWrite(leftMotorInput2, LOW);
 
@@ -65,82 +82,43 @@ void TurnToAvoidObstruction(int turnangle, DriveState turnDirection)
 		digitalWrite(rightMotorInput2, LOW);
 		break;
 
-	case DriveState::TurnRight:
+	case MovementState::TurnRight:
 		Serial.println("Turning right to avoid obstruction");
 		analogWrite(leftMotorEnablePin, turnspeed);
 		digitalWrite(leftMotorInput1, HIGH);
 		digitalWrite(leftMotorInput2, LOW);
 
-		analogWrite(rightMotorEnablePin, 100);
+		analogWrite(rightMotorEnablePin, 150);
 		digitalWrite(rightMotorInput1, HIGH);
 		digitalWrite(rightMotorInput2, LOW);
 		break;
 	}
+
+	delay(500);
 }
 
 void AvoidObstruction()
 {
 	/*
-	There is some obstruction infront. Move the trash can BACK few steps and then identify which direction is
+	There is some obstruction in front. Move the trash can BACK few steps and then identify which direction is
 	open for movement. Move in the open direction for few steps before straightening and going forward.
 	*/
 	int nBackStepsTaken = 0;
-	int LeftReverse = 0;
-	int RightReverse = 0;
-	DriveState turnDirection = DriveState::Stop;
-	int turnangle = 0;
+	
+	MovementState turnDirection = MovementState::Stop;
+	int turnangle= 0;
 
 	while (1)
 	{
-		delay(200);
+		float distance = DetectObstructionDistance();
 
-		// first read ultrasonic sensor raw value
-		unsigned int duration = sonar.ping();
-
-		// Determine distance from duration
-		// using 343 metres per second as speed of sound
-		float distance = (duration / 2) * 0.0343;
-
-		Serial.print("Obstruction distance = "); Serial.println(distance);
 		if (distance != 0 && distance <= SAFEDISTANCE)
 		{
-			for (int i = 0; i < 5; i++) {
-				// going reverse
-				digitalWrite(leftMotorInput1, LOW);
-				digitalWrite(leftMotorInput2, HIGH);
+			turnDirection = FindClearPath(turnangle);
 
-				digitalWrite(rightMotorInput1, LOW);
-				digitalWrite(rightMotorInput2, HIGH);
-			}
-
-			for (int i = 60, j = 100; i >= 20, j <= 140; i -= 20, j += 20)
-			{
-				delay(200);
-				ussServo.write(i);
-				duration = sonar.ping();
-				distance = (duration / 2) * 0.0343;
-
-				if (distance >= PASSTHRUDISTANCE)
-				{
-					// next movement direction = right and angle of turn = 90-i
-					turnangle = USS_SERVO_BASE_ANGLE - i;
-					turnDirection = DriveState::TurnRight;
-
-					break;
-				}
-
-				delay(250);
-				ussServo.write(j);
-				duration = sonar.ping();
-				distance = (duration / 2) * 0.0343;
-				if (distance >= PASSTHRUDISTANCE)
-				{
-					// next movement direction = left and angle of turn = j-90
-					turnangle = j - USS_SERVO_BASE_ANGLE;
-					turnDirection = DriveState::TurnLeft;
-					break;
-				}
-			}
+			// going reverse
+			Reverse();
+			delay(500); // reversing for 1/2 seconds before looking for a way	
 
 			TurnToAvoidObstruction(turnangle, turnDirection);
 		}
@@ -166,77 +144,44 @@ void MoveForward()
 	digitalWrite(rightMotorInput2, LOW);
 }
 
-void MoveTurnRight()
+void RightTurn()
 {
-	// first stop
-	StopMovement();
-
-	Serial.println(" Setting motor to REVERSE a bit |||***");
-	while (1)
-	{
-		analogWrite(leftMotorEnablePin, 200);
-		analogWrite(rightMotorEnablePin, 200);
-
-		digitalWrite(leftMotorInput1, LOW);
-		digitalWrite(leftMotorInput2, HIGH);
-		digitalWrite(rightMotorInput1, LOW);
-		digitalWrite(rightMotorInput2, HIGH);
-	}
-
-	Serial.println(" Setting motor to RIGHT |||***");
+	Serial.println(" Setting motors for RIGHT TURN |||***");
 	Serial.println("  ");
 	Serial.println("  ");
 
-	for (int i = 0; i < 10; i++)
-	{
-		analogWrite(leftMotorEnablePin, NORMALSPEED_RIGHT);
-		analogWrite(rightMotorEnablePin, SLOW_WHEEL_POWER);
-		digitalWrite(leftMotorInput1, HIGH);
-		digitalWrite(leftMotorInput2, LOW);
-		digitalWrite(rightMotorInput1, LOW);
-		digitalWrite(rightMotorInput2, HIGH);
-	}
+	analogWrite(leftMotorEnablePin, NORMALSPEED_RIGHT);
+	analogWrite(rightMotorEnablePin, NORMALSPEED_LEFT);	// lowering the speed of right motor by providing less pwms
+	digitalWrite(leftMotorInput1, LOW);
+	digitalWrite(leftMotorInput2, HIGH);
+	digitalWrite(rightMotorInput1, HIGH);
+	digitalWrite(rightMotorInput2, LOW);
 }
 
-void MoveTurnLeft()
+void LeftTurn()
 {
-	StopMovement();
-
-	Serial.println(" Setting motor to REVERSE a bit ***|||");
-	for (int i = 0; i < 10; i++)
-	{
-		digitalWrite(leftMotorInput1, LOW);
-		digitalWrite(leftMotorInput2, HIGH);
-		digitalWrite(rightMotorInput1, LOW);
-		digitalWrite(rightMotorInput2, HIGH);
-	}
-	for (int i = 0; i < 10; i++)
-	{
-		digitalWrite(leftMotorInput1, LOW);
-		digitalWrite(leftMotorInput2, HIGH);
-		digitalWrite(rightMotorInput1, LOW);
-		digitalWrite(rightMotorInput2, HIGH);
-	}
-
-	Serial.println(" Setting motor to LEFT ***|||");
+	Serial.println(" Setting motors for LEFT TURN ***|||");
 	Serial.println("  ");
 	Serial.println("  ");
 
-	for (int i = 0; i < 10; i++)
-	{
-		analogWrite(leftMotorEnablePin, SLOW_WHEEL_POWER);
-		analogWrite(rightMotorEnablePin, NORMALSPEED_RIGHT);
-		digitalWrite(leftMotorInput1, LOW);
-		digitalWrite(leftMotorInput2, HIGH);
-		digitalWrite(rightMotorInput1, HIGH);
-		digitalWrite(rightMotorInput2, LOW);
-	}
+	analogWrite(leftMotorEnablePin, 150); // lowering the speed of left motor by providing less pwms
+	analogWrite(rightMotorEnablePin, 255);
+	digitalWrite(leftMotorInput1, HIGH);
+	digitalWrite(leftMotorInput2, LOW);
+	digitalWrite(rightMotorInput1, LOW);
+	digitalWrite(rightMotorInput2, HIGH);
 }
 
 void Reverse()
 {
-	Serial.println(" Setting motor to REVERSE ||||||");
-	AvoidObstruction();
+	Serial.println(" Setting motors to REVERSE ||||||");
+	analogWrite(leftMotorEnablePin, 255);
+	analogWrite(rightMotorEnablePin, 255);
+
+	digitalWrite(leftMotorInput1, LOW);
+	digitalWrite(leftMotorInput2, HIGH);
+	digitalWrite(rightMotorInput1, LOW);
+	digitalWrite(rightMotorInput2, HIGH);
 }
 
 void StopMovement()
