@@ -1,20 +1,57 @@
 
 
 
-// Motor A
+// Motor A - right
 
-int enA = 9;
-int in1 = 8;
-int in2 = 7;
+int enA = 3;
+int in1 = 5;
+int in2 = 4;
 
-// Motor B
+// Motor B - left
 
-int enB = 3;
-int in3 = 5;
-int in4 = 4;
+int enB = 11;
+int in3 = 7;
+int in4 = 8;
+bool doonce ;
 
-void setup(){
+void PivotRight()
+{
+  Serial.println(" Setting motors for RIGHT PIVOT |||***");
+  Serial.println("  ");
+  Serial.println("  ");
+
+  analogWrite(enB, 200);
+  analogWrite(enA, 160);  // lowering the speed of right motor by providing less pwms
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  delay(500) ;
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  delay(20) ;
+}
+
+void PivotLeft()
+{
+  Serial.println(" Setting motors for LEFT PIVOT ***|||");
+  Serial.println("  ");
+  Serial.println("  ");
+
+  analogWrite(enB, 150); // lowering the speed of left motor by providing less pwms
+  analogWrite(enA, 150);
   
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+}
+
+void setup()
+{
+  doonce = true ;
   Serial.begin(9600);
   
   pinMode(enA, OUTPUT);
@@ -23,19 +60,31 @@ void setup(){
   pinMode(enB, OUTPUT);
   pinMode(in3, OUTPUT);
   pinMode(in4, OUTPUT);
-  }
-void loop(){
+}
 
+void loop()
+{
+  if (doonce == true)
+  {
+    for (int i=0; i<4; i++)
+    {
+      PivotRight() ;
+      delay(20) ;
+    }
+    
+    doonce = false ;
+  }
+  /*
   // Turn on Motor A forwards
   digitalWrite(in1,HIGH);
   digitalWrite(in2,LOW);
-  analogWrite(enA,255);
-    Serial.println("A");
+  analogWrite(enA,45);
+  Serial.println("Right Motor - forward");
   delay(2000);
 
 
   //Turn Off
-    digitalWrite(in1,LOW);
+  digitalWrite(in1,LOW);
   digitalWrite(in2,HIGH);
   analogWrite(enA,0);
   Serial.println("Off");
@@ -44,12 +93,12 @@ void loop(){
   // Now Backwards
     digitalWrite(in1,LOW);
   digitalWrite(in2,HIGH);
-  analogWrite(enA,255);
-  Serial.println("A Back");
+  analogWrite(enA,45);
+  Serial.println("Right Motor - Backwards");
   delay(2000);
 
 // Now off again
-    digitalWrite(in1,LOW);
+  digitalWrite(in1,LOW);
   digitalWrite(in2,LOW);
   analogWrite(enA,0);
   Serial.println("Off");
@@ -58,8 +107,8 @@ void loop(){
 // Turn on Motor B forwards
   digitalWrite(in3,HIGH);
   digitalWrite(in4,LOW);
-  analogWrite(enB,255);
-    Serial.println("B");
+  analogWrite(enB,45);
+  Serial.println("Left Motor - Forward");
   delay(2000);
 
   //Turn Off
@@ -72,8 +121,8 @@ void loop(){
   // Now Backwards
   digitalWrite(in3,LOW);
   digitalWrite(in4,HIGH);
-  analogWrite(enB,255);
-  Serial.println("B backwards");
+  analogWrite(enB,45);
+  Serial.println("Left motor backwards");
   delay(2000);
 
 // Now off again
@@ -89,10 +138,10 @@ void loop(){
   digitalWrite(in2,LOW);
   digitalWrite(in3,HIGH);
   digitalWrite(in4,LOW);
-  analogWrite(enA,255);
-  analogWrite(enB,255);
-    Serial.println("A and B");
-  delay(10000);
+  analogWrite(enA,45);
+  analogWrite(enB,45);
+  Serial.println("Right and Left motors forward");
+  delay(25000);
 
   //Now both off
   digitalWrite(in1,LOW);
@@ -102,49 +151,6 @@ void loop(){
   analogWrite(enA,0);
   analogWrite(enB,0);
   Serial.println("Off");
-  delay(10000);  
-  
+  delay(25000);  */
   }
   
-/*
-int enA = 9;
-int in1 = 8;
-int in2 = 7;
-
-
-void setup(){
-  
-  pinMode(enA, OUTPUT);
-  pinMode(in1, OUTPUT);
-  pinMode(in2, OUTPUT);
-}
-
-  
-void loop(){
-
-  // Turn on Motor A forwards
-  digitalWrite(in1,HIGH);
-  digitalWrite(in2,LOW);
-  analogWrite(enA,255);
-  delay(2000);
-
-  //Turn Off
-    digitalWrite(in1,LOW);
-  digitalWrite(in2,LOW);
-  analogWrite(enA,0);
-  delay(2000);
-
-  // Now Backwards
-    digitalWrite(in1,LOW);
-  digitalWrite(in2,HIGH);
-  analogWrite(enA,255);
-  delay(2000);
-
-// Now off again
-    digitalWrite(in1,LOW);
-  digitalWrite(in2,LOW);
-  analogWrite(enA,0);
-  delay(2000);
-}
-  
-  */

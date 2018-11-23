@@ -54,11 +54,11 @@ float SonarDistance()
 	return distance;
 }
 
-MovementState FindClearPath(int& turnangle)
+MoveDirection FindClearPath(int& turnangle)
 {
 	float distance = 0;
 	
-	MovementState turnDirection = MovementState::Stop;
+	MoveDirection turnDirection = MoveDirection::None;
 	EnableObstructionDetection();
 
 	// move from 60 degree angle to 140 degree looking if there is an obstruction
@@ -73,8 +73,7 @@ MovementState FindClearPath(int& turnangle)
 		{
 			// next movement direction = right and angle of turn = BaseAngle-i
 			turnangle = USS_SERVO_BASE_ANGLE - i;
-			turnDirection = MovementState::TurnRight;
-
+			turnDirection = MoveDirection::TurnRight;
 			break;
 		}
 		
@@ -85,7 +84,7 @@ MovementState FindClearPath(int& turnangle)
 		{
 			// next movement direction = left and angle of turn = BaseAngle-90
 			turnangle = j - USS_SERVO_BASE_ANGLE;
-			turnDirection = MovementState::TurnLeft;
+			turnDirection = MoveDirection::TurnLeft;
 			break;
 		}
 	}

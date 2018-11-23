@@ -14,9 +14,18 @@ enum Trashcart_States {
 	State_ReturningToBase,
 };
 
-enum DriveEvents {
-	DriveEvent_Trigger,	
+enum DriveEvent {
+	DriveEvent_None,	// default state
+	DriveEvent_Stop,
+	DriveEvent_GoForward,	
+	DriveEvent_Trigger,
 	DriveEvent_CrossedLeftBoundary,
 	DriveEvent_CrossedRightBoundary,
 	DriveEvent_FoundObstruction
+};
+
+enum MoveDirection {
+	TurnLeft,
+	TurnRight,
+	None
 };

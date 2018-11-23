@@ -6,17 +6,17 @@
 #pragma once
 
 // Left Motor
-int leftMotorEnablePin =11;
-int leftMotorInput1 = 8;
-int leftMotorInput2 = 7;
+int leftMotorEnablePin =3;
+int leftMotorInput1 = 5;
+int leftMotorInput2 = 4;
 
 // Right Motor
-int rightMotorEnablePin = 3;
-int rightMotorInput1 = 5;
-int rightMotorInput2 = 4;
+int rightMotorEnablePin = 11;
+int rightMotorInput1 = 7;
+int rightMotorInput2 = 8;
 
 // Ultrasonic sensor
 #define TRIGGER_PIN				13  /* sends sound wave */
-#define ECHO_PIN				10  /* reads bounced sound wave */
+#define ECHO_PIN				12  /* reads bounced sound wave */
 #define MAX_DISTANCE			400 /* max distance in cm for sound wave to travel */
-#define ULTRASONIC_SERVO_PIN	12
+#define ULTRASONIC_SERVO_PIN	10

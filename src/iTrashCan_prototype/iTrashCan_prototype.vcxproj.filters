@@ -27,6 +27,9 @@
     <ClInclude Include="PinDefinitions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="States.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="iTrashCan_prototype.ino" />
@@ -34,5 +37,6 @@
     <None Include="Color.ino" />
     <None Include="Obstruction.ino" />
     <None Include="prototype.licenseheader" />
+    <None Include="Prototype.fzz" />
   </ItemGroup>
 </Project>

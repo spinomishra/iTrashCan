@@ -53,122 +53,206 @@ void setup()
 	StopMovement();
 }
 
-Trashcart_States WhatIsNextState(Trashcart_States currentCardState)
+Trashcart_States WhatIsNextState(Trashcart_States currentCardState, Color color, DriveEvent& driveEvent)
 {
 	Trashcart_States nextState = currentCardState;
-	if (currentCardState == Trashcart_States::State_StoppedAtBase || currentCardState == Trashcart_States::State_ReachedPickupPoint)
+	driveEvent = DriveEvent_None;
+
+	if (currentCardState == State_StoppedAtBase || currentCardState == State_ReachedPickupPoint)
 	{
 		// timer triggered
-		if (currentCardState == Trashcart_States::State_StoppedAtBase)
+		if (currentCardState == State_StoppedAtBase)
 		{
 			if (TimeForTrashToBePicked() == true)
-				nextState = Trashcart_States::State_DrivingToPickupPoint;
+			{
+				nextState = State_DrivingToPickupPoint;
+				driveEvent = DriveEvent_GoForward;
+			}
 		}
 		else if (TimeForReturning())
 		{
-			nextState = Trashcart_States::State_ReturningToBase;
+			nextState = State_ReturningToBase;
+			driveEvent = DriveEvent_GoForward;
 		}
+	}
+
+	Markers marker = DetermineMarker(color);
+	if (marker == RedMarker)
+	{
+		if (currentState == State_DrivingToPickupPoint)
+		{
+			nextState = State_ReachedPickupPoint;
+			driveEvent = DriveEvent_Stop;
+		}
+
+		if (currentState == State_ReturningToBase)
+		{
+			nextState = State_StoppedAtBase;
+			driveEvent = DriveEvent_Stop;
+		}
+	}
+
+	if (marker == GreenMarker)
+	{
+		if (nextState == State_DrivingToPickupPoint)
+			driveEvent = DriveEvent_CrossedRightBoundary;
+		else if (nextState == State_ReturningToBase)
+			driveEvent = DriveEvent_CrossedLeftBoundary;
+	}
+
+	if (marker == BlueMarker)
+	{
+		if (nextState == State_DrivingToPickupPoint)
+			driveEvent = DriveEvent_CrossedLeftBoundary;
+		else if (nextState == State_ReturningToBase)
+			driveEvent = DriveEvent_CrossedRightBoundary;
+	}
+
+	if (marker == Clear)
+	{
+		driveEvent = DriveEvent_GoForward;
 	}
 
 	return nextState;
 }
 
-MovementState GetDrivingEvent()
+bool IsPathClear()
 {
-	// collect all sensors data (time, color, ultrasonic)
-	ReadColorSensor(controlData.color);
+	// read ultra sonic data
 	controlData.obstructionDistance = DetectObstructionDistance();
-	return DetermineTrashCanMovement(controlData);
+
+	// collect all sensors data (time, color, ultrasonic)	
+	if (controlData.obstructionDistance != 0 && controlData.obstructionDistance <= SAFEDISTANCE)
+		return false;
+
+	return true;
 }
 
 void loop()
 {
-	Trashcart_States nextState = WhatIsNextState(currentState);
-	currentState = nextState;
-	MovementState drivingEvent = MovementState::Continue;
+	DriveEvent drivingEvent = DriveEvent::DriveEvent_None;
 
+	// first read color data
+	ReadColorSensor(controlData.color);
+	Trashcart_States nextState = WhatIsNextState(currentState, controlData.color, drivingEvent);
+	
 	switch (nextState)
 	{
-	case Trashcart_States::State_StoppedAtBase:
-		currentState = Trashcart_States::State_StoppedAtBase;
-		break;
+		case Trashcart_States::State_StoppedAtBase:
+			if (currentState == State_ReturningToBase)
+			{
+				StopMovement();
+				delay(100);
+				ReverseInPosition();
+			}
+			break;
 
-	case Trashcart_States::State_DrivingToPickupPoint:
-		currentState = Trashcart_States::State_DrivingToPickupPoint;
-		trashcartMovement = GetDrivingEvent();
-		break;
+		case Trashcart_States::State_DrivingToPickupPoint:
+			if (!IsPathClear())
+			{
+				Serial.println("Driving to pickup point... Found obstruction");
+				drivingEvent = DriveEvent_FoundObstruction;
+			}
+			else
+				Serial.println("Driving to pickup point");
 
-	case Trashcart_States::State_ReachedPickupPoint:
-		currentState = Trashcart_States::State_ReachedPickupPoint;
-		break;
+			break;
 
-	case Trashcart_States::State_ReturningToBase:
-		currentState = Trashcart_States::State_ReturningToBase;
-		trashcartMovement = GetDrivingEvent();
-		break;
+		case Trashcart_States::State_ReachedPickupPoint:
+			{
+				Serial.println("Reached pickup point...will wait for pickup");
+				StopMovement();
+				delay(500);
+			}
+			break;
+
+		case Trashcart_States::State_ReturningToBase:
+			if (currentState == State_ReachedPickupPoint)
+			{
+				Serial.println("Getting ready to travel to base.. reverse in position");
+
+				StopMovement();
+				delay(250);
+
+				ReverseInPosition();
+				StopMovement();
+				delay(1000);
+
+				Color color;
+				ReadColorSensor(color);
+
+				Markers marker = DetermineMarker(color);
+				do
+				{					
+					if (marker == RedMarker)
+					{
+						MoveForward();
+						delay(250);
+					}
+
+					if (marker == BlueMarker)
+					{
+						LeftTurn();
+						delay(500);
+						StopMovement();
+						delay(100);
+					}
+
+					if (marker == GreenMarker)
+					{
+						RightTurn();
+						delay(500);
+						StopMovement();
+						delay(100);
+					}
+
+					marker = DetermineMarker(color);
+				} while (marker != Clear);
+			}
+			else if (!IsPathClear())
+			{
+				Serial.println("Driving to base ... Found obstruction");
+				drivingEvent = DriveEvent_FoundObstruction;
+			}
+			break;
 	}
 
-	switch (trashcartMovement)
+	switch (drivingEvent)
 	{
-	case MovementState::Continue:
-		// continue what ever was happening
-		break;	
+		case DriveEvent_None:	// continue what ever is currently happening
+			break;
 
-	case MovementState::GoForward:
-		MoveForward();
-		break;
+		case DriveEvent_Stop:
+			StopMovement();
+			delay(500);
+			break;
 
-	case MovementState::TurnRight:
-		RightTurn();
-		break;
+		case DriveEvent::DriveEvent_FoundObstruction:
+			AvoidObstruction();
+			break;
 
-	case MovementState::TurnLeft:
-		LeftTurn();
-		break;
+		case DriveEvent_GoForward:
+			MoveForward();
+			break;
 
-	case MovementState::BackupAndTurnRight:
-	{
-		Backup();
+		case DriveEvent_CrossedLeftBoundary:
+			Backup();
+			RightTurn();
+			delay(500);
+			StopMovement();
+			delay(100);
+			break;
 
-		// Now turn right
-		RightTurn();
-		delay(1000);
+		case DriveEvent_CrossedRightBoundary:
+			Backup();
+			LeftTurn();
+			delay(500);
+			StopMovement();
+			delay(100);
+			break;
 	}
-	break;
 
-	case MovementState::BackupAndTurnLeft:
-	{
-		Backup();
-
-		// Now turn left
-		LeftTurn();
-		delay(1000);
-	}
-	break;
-
-	case MovementState::GoBack:
-		Reverse();
-		break;
-
-	case MovementState::Obstruction:
-		AvoidObstruction();
-		break;
-
-	case MovementState::Stop:
-		StopMovement();
-
-		if (ReturningToBase == true)
-			ReverseInPosition();
-
-		// wait for trigger to restart the drive
-		{
-			unsigned long WaitForSeconds = DetermineWaitTimeBeforeReturningBackToBase();
-			delay(WaitForSeconds);
-		}
-
-		TurnAround();
-		break;
-	}
+	currentState = nextState;	
 }
 
 void Backup()
@@ -185,60 +269,29 @@ void Backup()
 	delay(100);
 }
 
-unsigned long DetermineWaitTimeBeforeReturningBackToBase()
+bool TimeForTrashToBePicked()
+{
+	unsigned long waitTime = 0;
+#ifdef SIMULATE_WAIT_TIME
+	waitTime = 2 * SIMULATION_WAIT_TIME * MILLISECONDS;
+#else
+	waitTime = (7*24 - 6) * 60 * 60 * MILLISECONDS ;	// 7 days
+#endif
+
+	delay(waitTime);
+	return true;
+}
+
+bool TimeForReturning()
 {
 	unsigned long waitTime = 0;
 
 #ifdef SIMULATE_WAIT_TIME
 	waitTime = SIMULATION_WAIT_TIME * MILLISECONDS;
 #else
-	if (ReturningToBase == true)
-	{
-		// wait for next pickup time which is 7 days aways - 6 hours
-	}
-	else
-	{
-		waitTime = 6 * 60 * 60 * MILLISECONDS;	// 6 hours
-	}
+	waitTime = 6 * 60 * 60 * MILLISECONDS;	// 6 hours
 #endif
 
-	return waitTime;
-}
-
-void TurnAround()
-{
-	{
-		ReturningToBase = true;
-
-		// SIMULATING RETURN BACK TO BASE POSITION
-		Reverse();
-		delay(1000);
-
-		analogWrite(leftMotorEnablePin, 255);
-		analogWrite(rightMotorEnablePin, 255);
-		digitalWrite(leftMotorInput1, LOW);
-		digitalWrite(leftMotorInput2, HIGH);
-		digitalWrite(rightMotorInput1, HIGH);
-		digitalWrite(rightMotorInput2, LOW);
-		delay(6000);
-
-		MoveForward();
-		delay(1000);
-	}
-}
-
-void ReverseInPosition()
-{
-}
-
-bool TimeForTrashToBePicked()
-{
-	delay(30000);
-	return true;
-}
-
-bool TimeForReturning()
-{
-	delay(15000);
+	delay(waitTime);
 	return true;
 }

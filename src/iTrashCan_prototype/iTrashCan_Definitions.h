@@ -8,26 +8,16 @@
 #include "ColorDefinitions.h"
 
 #define OUTOFRANGE 401
-#define SAFEDISTANCE 7
+#define SAFEDISTANCE 15
 #define PASSTHRUDISTANCE 50
-#define NORMALSPEED_LEFT 129
-#define NORMALSPEED_RIGHT 150
-#define SLOW_WHEEL_POWER  110
+#define NORMALSPEED_LEFT 60
+#define NORMALSPEED_RIGHT 60
+#define SLOW_WHEEL_POWER  40
 #define USS_SERVO_BASE_ANGLE 80
 #define SIMULATION_WAIT_TIME  15	
 #define MILLISECONDS	1000
-
-enum MovementState {
-	Stop = 1,	// default state
-	GoForward,
-	TurnLeft,
-	TurnRight,
-	GoBack,
-	Obstruction,
-	BackupAndTurnRight,
-	BackupAndTurnLeft,
-	Continue
-};
+#define REVERSESPEED_LEFT 70
+#define REVERSESPEED_RIGHT 70
 
 struct ControlData {
 	Color color;
@@ -35,4 +25,11 @@ struct ControlData {
 	int time;
 	bool goingBack;
 	bool moving;
+};
+
+enum Markers {
+	Clear,
+	RedMarker,
+	GreenMarker,
+	BlueMarker,	
 };

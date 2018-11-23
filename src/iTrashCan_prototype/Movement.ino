@@ -4,9 +4,7 @@
 // ColorDefinitions.h created by spinomishra on 11/4/2018T12:28 PM
 //
 
-MovementState CurrentTrashCanMovement = MovementState::Stop;
-
-MovementState DetermineMoveDirection(Color color)
+Markers DetermineMarker(Color color)
 {
 	int R = color.R;
 	int G = color.G;
@@ -21,37 +19,25 @@ MovementState DetermineMoveDirection(Color color)
 	if (R >= threshold_R && R > B && R > G)  // Red dominance
 	{
 		Serial.println("Red Dominance :");
-		return MovementState::Stop;
+		return Markers::RedMarker;
 	}
 
 	if (G >= threshold_G && G >= B)  // Green dominance
 	{
 		Serial.println("Green Dominance :");
-		return MovementState::BackupAndTurnLeft;
+		return Markers::GreenMarker;
 	}
 
 	if (B >= threshold_B && B > R && B >= G)  // Blue dominance
 	{
 		Serial.println("Blue Dominance :");
-		return MovementState::BackupAndTurnRight;
+		return Markers::BlueMarker;
 	}
 
-	return MovementState::GoForward;
+	return Markers::Clear;
 }
 
-// Determining the path direction for the trash bin to or from curb side
-MovementState DetermineTrashCanMovement(const ControlData& controlData)
-{
-	// go back if there is an obstruction within 15 cm
-	if (controlData.obstructionDistance != 0 && controlData.obstructionDistance <= SAFEDISTANCE)
-		return MovementState::Obstruction;
-
-	CurrentTrashCanMovement = DetermineMoveDirection(controlData.color);
-
-	return CurrentTrashCanMovement;
-}
-
-void TurnToAvoidObstruction(int turnangle, MovementState turnDirection)
+void TurnToAvoidObstruction(int turnangle, MoveDirection turnDirection)
 {
 	int turnspeed = 255;
 
@@ -71,7 +57,7 @@ void TurnToAvoidObstruction(int turnangle, MovementState turnDirection)
 
 	switch (turnDirection)
 	{
-	case MovementState::TurnLeft:
+	case MoveDirection::TurnLeft:
 		Serial.println("Turning left to avoid obstruction");
 		analogWrite(leftMotorEnablePin, 150);
 		digitalWrite(leftMotorInput1, HIGH);
@@ -82,7 +68,7 @@ void TurnToAvoidObstruction(int turnangle, MovementState turnDirection)
 		digitalWrite(rightMotorInput2, LOW);
 		break;
 
-	case MovementState::TurnRight:
+	case MoveDirection::TurnRight:
 		Serial.println("Turning right to avoid obstruction");
 		analogWrite(leftMotorEnablePin, turnspeed);
 		digitalWrite(leftMotorInput1, HIGH);
@@ -105,7 +91,7 @@ void AvoidObstruction()
 	*/
 	int nBackStepsTaken = 0;
 	
-	MovementState turnDirection = MovementState::Stop;
+	MoveDirection turnDirection = MoveDirection::None;
 	int turnangle= 0;
 
 	while (1)
@@ -150,8 +136,8 @@ void RightTurn()
 	Serial.println("  ");
 	Serial.println("  ");
 
-	analogWrite(leftMotorEnablePin, NORMALSPEED_RIGHT);
-	analogWrite(rightMotorEnablePin, NORMALSPEED_LEFT);	// lowering the speed of right motor by providing less pwms
+	analogWrite(leftMotorEnablePin, 255);
+	analogWrite(rightMotorEnablePin, 150);	// lowering the speed of right motor by providing less pwms
 	digitalWrite(leftMotorInput1, LOW);
 	digitalWrite(leftMotorInput2, HIGH);
 	digitalWrite(rightMotorInput1, HIGH);
@@ -172,18 +158,6 @@ void LeftTurn()
 	digitalWrite(rightMotorInput2, HIGH);
 }
 
-void Reverse()
-{
-	Serial.println(" Setting motors to REVERSE ||||||");
-	analogWrite(leftMotorEnablePin, 255);
-	analogWrite(rightMotorEnablePin, 255);
-
-	digitalWrite(leftMotorInput1, LOW);
-	digitalWrite(leftMotorInput2, HIGH);
-	digitalWrite(rightMotorInput1, LOW);
-	digitalWrite(rightMotorInput2, HIGH);
-}
-
 void StopMovement()
 {
 	Serial.println(" Setting motor to STOP ------");
@@ -191,4 +165,59 @@ void StopMovement()
 	digitalWrite(leftMotorInput2, LOW);
 	digitalWrite(rightMotorInput1, LOW);
 	digitalWrite(rightMotorInput2, LOW);
+}
+
+void Reverse()
+{
+	Serial.println(" Setting motors to REVERSE ||||||");
+	analogWrite(leftMotorEnablePin, REVERSESPEED_LEFT);
+	analogWrite(rightMotorEnablePin, REVERSESPEED_RIGHT);
+
+	digitalWrite(leftMotorInput1, LOW);
+	digitalWrite(leftMotorInput2, HIGH);
+	digitalWrite(rightMotorInput1, LOW);
+	digitalWrite(rightMotorInput2, HIGH);
+}
+
+void PivotRight()
+{
+	Serial.println(" Setting motors for RIGHT PIVOT |||***");
+	Serial.println("  ");
+	Serial.println("  ");
+
+	analogWrite(leftMotorEnablePin, 200);
+	analogWrite(rightMotorEnablePin, 160);	// lowering the speed of right motor by providing less pwms
+	digitalWrite(leftMotorInput1, LOW);
+	digitalWrite(leftMotorInput2, HIGH);
+	digitalWrite(rightMotorInput1, HIGH);
+	digitalWrite(rightMotorInput2, LOW);
+	delay(500);
+	StopMovement();
+	delay(20);
+}
+
+void PivotLeft()
+{
+	Serial.println(" Setting motors for LEFT PIVOT ***|||");
+	Serial.println("  ");
+	Serial.println("  ");
+
+	analogWrite(leftMotorEnablePin, 160);
+	analogWrite(rightMotorEnablePin, 200);	
+	digitalWrite(leftMotorInput1, HIGH);
+	digitalWrite(leftMotorInput2, LOW);
+	digitalWrite(rightMotorInput1, LOW);
+	digitalWrite(rightMotorInput2, HIGH);
+	delay(500);
+	StopMovement();
+	delay(20);
+}
+
+void ReverseInPosition()
+{
+	for (int i = 0; i<4; i++)
+	{
+		PivotRight();
+		delay(20);
+	}
 }
