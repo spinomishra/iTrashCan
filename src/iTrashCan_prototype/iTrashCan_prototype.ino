@@ -1,7 +1,7 @@
 //
 // ©Copyright 2018, All Rights Reserved.
 //
-// ColorDefinitions.h created by spinomishra on 10/6/2018T10:11 AM
+// iTrashCan_prototype.ino created by spinomishra on 10/6/2018T10:11 AM
 //
 
 #include <Servo.h>
@@ -20,7 +20,6 @@ ControlData controlData;
 #define SIMULATE_WAIT_TIME	1
 
 Trashcart_States currentState = Trashcart_States::State_StoppedAtBase;
-Trashcart_States nextState = Trashcart_States::State_StoppedAtBase;
 
 bool ReturningToBase = false;
 
@@ -170,13 +169,12 @@ void loop()
 			if (currentState == State_ReachedPickupPoint)
 			{
 				Serial.println("Getting ready to travel to base.. reverse in position");
-
-				StopMovement();
-				delay(250);
+				Reverse();
+				delay(400);
 
 				ReverseInPosition();
-				StopMovement();
-				delay(1000);
+
+				delay(500);
 
 				Color color;
 				ReadColorSensor(color);
@@ -238,7 +236,7 @@ void loop()
 		case DriveEvent_CrossedLeftBoundary:
 			Backup();
 			RightTurn();
-			delay(500);
+			delay(350);
 			StopMovement();
 			delay(100);
 			break;
@@ -246,7 +244,7 @@ void loop()
 		case DriveEvent_CrossedRightBoundary:
 			Backup();
 			LeftTurn();
-			delay(500);
+			delay(350);
 			StopMovement();
 			delay(100);
 			break;
@@ -273,7 +271,7 @@ bool TimeForTrashToBePicked()
 {
 	unsigned long waitTime = 0;
 #ifdef SIMULATE_WAIT_TIME
-	waitTime = 2 * SIMULATION_WAIT_TIME * MILLISECONDS;
+	waitTime = SIMULATION_WAIT_TIME * MILLISECONDS;
 #else
 	waitTime = (7*24 - 6) * 60 * 60 * MILLISECONDS ;	// 7 days
 #endif

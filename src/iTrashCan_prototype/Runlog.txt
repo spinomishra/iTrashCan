@@ -1,0 +1,1904 @@
+FF
+No TCS34725 found ... check your connections
+44
+Found sensor
+ Setting motor to STOP ------
+Raw RGBC :0,0,0,0
+Color value: 0Hex: 0RGB (0-255) :0,0,0,0
+Ultrasonic sensor - object distance : 185.60
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2289,1227,1110,4326
+Color value: 3327Hex: CFFRGB (0-255) :27,14,13,51
+Ultrasonic sensor - object distance : 185.39
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2294,1218,1099,4326
+Color value: 3327Hex: CFFRGB (0-255) :27,14,13,51
+Ultrasonic sensor - object distance : 185.05
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2289,1216,1097,4297
+Color value: 3321Hex: CF9RGB (0-255) :27,14,12,50
+Ultrasonic sensor - object distance : 184.09
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2291,1226,1113,4321
+Color value: 3323Hex: CFBRGB (0-255) :27,14,13,51
+Ultrasonic sensor - object distance : 0.00
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2334,1256,1132,4405
+Color value: 3582Hex: DFERGB (0-255) :27,14,13,52
+Ultrasonic sensor - object distance : 340.70
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2259,1194,1085,4221
+Color value: 3327Hex: CFFRGB (0-255) :26,14,12,50
+Ultrasonic sensor - object distance : 334.39
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2327,1257,1143,4408
+Color value: 3583Hex: DFFRGB (0-255) :27,14,13,52
+Ultrasonic sensor - object distance : 362.72
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2359,1270,1153,4461
+Color value: 3575Hex: DF7RGB (0-255) :27,15,13,52
+Ultrasonic sensor - object distance : 328.29
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2416,1304,1179,4574
+Color value: 3579Hex: DFBRGB (0-255) :28,15,13,54
+Ultrasonic sensor - object distance : 363.96
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2417,1294,1172,4552
+Color value: 3583Hex: DFFRGB (0-255) :28,15,13,53
+Ultrasonic sensor - object distance : 351.75
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2404,1292,1174,4542
+Color value: 3582Hex: DFERGB (0-255) :28,15,13,53
+Ultrasonic sensor - object distance : 312.03
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2307,1230,1123,4339
+Color value: 3567Hex: DEFRGB (0-255) :27,14,13,51
+Ultrasonic sensor - object distance : 348.32
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2349,1262,1159,4440
+Color value: 3567Hex: DEFRGB (0-255) :27,14,13,52
+Ultrasonic sensor - object distance : 173.11
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2455,1334,1207,4670
+Color value: 3511Hex: DB7RGB (0-255) :29,15,14,55
+Ultrasonic sensor - object distance : 337.96
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2408,1313,1199,4595
+Color value: 3567Hex: DEFRGB (0-255) :28,15,14,54
+Ultrasonic sensor - object distance : 346.40
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2451,1339,1214,4683
+Color value: 3519Hex: DBFRGB (0-255) :29,15,14,55
+Ultrasonic sensor - object distance : 314.22
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2562,1356,1204,4789
+Color value: 4094Hex: FFERGB (0-255) :30,16,14,56
+Ultrasonic sensor - object distance : 116.04
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2401,1350,1307,4735
+Color value: 3455Hex: D7FRGB (0-255) :28,15,15,56
+Ultrasonic sensor - object distance : 108.29
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2286,2135,2988,7097
+Color value: 3071Hex: BFFRGB (0-255) :27,25,35,84
+Blue Dominance :
+Ultrasonic sensor - object distance : 129.55
+Driving to pickup point
+ Setting motor to STOP ------
+ Setting motors to REVERSE ||||||
+ Setting motor to STOP ------
+ Setting motors for RIGHT TURN |||***
+  
+  
+ Setting motor to STOP ------
+Raw RGBC :2536,1384,1258,4830
+Color value: 3562Hex: DEARGB (0-255) :30,16,14,57
+Ultrasonic sensor - object distance : 290.90
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2430,1332,1223,4643
+Color value: 3583Hex: DFFRGB (0-255) :28,15,14,55
+Ultrasonic sensor - object distance : 336.24
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2422,1329,1217,4630
+Color value: 3575Hex: DF7RGB (0-255) :28,15,14,54
+Ultrasonic sensor - object distance : 291.04
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2461,1356,1241,4718
+Color value: 3549Hex: DDDRGB (0-255) :29,16,14,55
+Ultrasonic sensor - object distance : 209.88
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2443,1347,1236,4685
+Color value: 3551Hex: DDFRGB (0-255) :28,15,14,55
+Ultrasonic sensor - object distance : 326.02
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2563,1403,1273,4768
+Color value: 4091Hex: FFBRGB (0-255) :30,16,15,56
+Ultrasonic sensor - object distance : 329.38
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2538,1370,1231,4792
+Color value: 3583Hex: DFFRGB (0-255) :30,16,14,56
+Ultrasonic sensor - object distance : 309.69
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2504,1356,1233,4747
+Color value: 3549Hex: DDDRGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 309.01
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2414,1358,1307,4742
+Color value: 3455Hex: D7FRGB (0-255) :28,16,15,56
+Ultrasonic sensor - object distance : 186.90
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2419,1753,2138,5982
+Color value: 4091Hex: FFBRGB (0-255) :28,20,25,70
+Ultrasonic sensor - object distance : 180.86
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2298,2190,3070,7227
+Color value: 3070Hex: BFERGB (0-255) :27,25,36,85
+Blue Dominance :
+Ultrasonic sensor - object distance : 321.36
+Driving to pickup point
+ Setting motor to STOP ------
+ Setting motors to REVERSE ||||||
+ Setting motor to STOP ------
+ Setting motors for RIGHT TURN |||***
+  
+  
+ Setting motor to STOP ------
+Raw RGBC :2495,1354,1237,4721
+Color value: 3583Hex: DFFRGB (0-255) :29,16,14,55
+Ultrasonic sensor - object distance : 281.50
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2429,1336,1223,4646
+Color value: 3583Hex: DFFRGB (0-255) :28,15,14,55
+Ultrasonic sensor - object distance : 322.66
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2513,1412,1291,4870
+Color value: 3551Hex: DDFRGB (0-255) :29,16,15,57
+Ultrasonic sensor - object distance : 290.35
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2434,1340,1226,4658
+Color value: 3582Hex: DFERGB (0-255) :28,15,14,55
+Ultrasonic sensor - object distance : 326.98
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2498,1356,1233,4737
+Color value: 3551Hex: DDFRGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 282.80
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2580,1419,1288,4926
+Color value: 3999Hex: F9FRGB (0-255) :30,16,15,58
+Ultrasonic sensor - object distance : 317.58
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2593,1404,1265,4899
+Color value: 4093Hex: FFDRGB (0-255) :30,16,14,58
+Ultrasonic sensor - object distance : 272.51
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2498,1361,1252,4749
+Color value: 3575Hex: DF7RGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 299.95
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2512,1393,1304,4849
+Color value: 3577Hex: DF9RGB (0-255) :29,16,15,57
+Ultrasonic sensor - object distance : 386.53
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2513,1488,1491,5143
+Color value: 3539Hex: DD3RGB (0-255) :29,17,17,60
+Ultrasonic sensor - object distance : 289.18
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2358,1896,2428,5853
+Color value: 3966Hex: F7ERGB (0-255) :27,22,28,69
+Ultrasonic sensor - object distance : 312.99
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2323,2230,3125,7344
+Color value: 3511Hex: DB7RGB (0-255) :27,26,37,87
+Blue Dominance :
+Ultrasonic sensor - object distance : 164.47
+Driving to pickup point
+ Setting motor to STOP ------
+ Setting motors to REVERSE ||||||
+ Setting motor to STOP ------
+ Setting motors for RIGHT TURN |||***
+  
+  
+ Setting motor to STOP ------
+Raw RGBC :2567,1407,1278,4883
+Color value: 4095Hex: FFFRGB (0-255) :30,16,15,57
+Ultrasonic sensor - object distance : 309.49
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2511,1362,1236,4762
+Color value: 3551Hex: DDFRGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 282.53
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2548,1411,1282,4895
+Color value: 3575Hex: DF7RGB (0-255) :30,16,15,58
+Ultrasonic sensor - object distance : 285.82
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2507,1359,1233,4754
+Color value: 3551Hex: DDFRGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 346.26
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2492,1344,1220,4705
+Color value: 3580Hex: DFCRGB (0-255) :29,15,14,55
+Ultrasonic sensor - object distance : 310.11
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2530,1376,1251,4798
+Color value: 3555Hex: DE3RGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 276.29
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2549,1388,1258,4827
+Color value: 3583Hex: DFFRGB (0-255) :30,16,14,57
+Ultrasonic sensor - object distance : 270.80
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2512,1376,1262,4780
+Color value: 3582Hex: DFERGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 297.62
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2514,1372,1267,4783
+Color value: 3583Hex: DFFRGB (0-255) :29,16,15,56
+Ultrasonic sensor - object distance : 298.79
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2482,1393,1318,4832
+Color value: 3575Hex: DF7RGB (0-255) :29,16,15,57
+Ultrasonic sensor - object distance : 340.02
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2463,1452,1478,5048
+Color value: 3583Hex: DFFRGB (0-255) :29,17,17,59
+Ultrasonic sensor - object distance : 294.26
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2410,1869,2343,6284
+Color value: 3951Hex: F6FRGB (0-255) :28,22,27,74
+Ultrasonic sensor - object distance : 278.76
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2307,2198,3070,7237
+Color value: 3071Hex: BFFRGB (0-255) :27,26,36,85
+Blue Dominance :
+Ultrasonic sensor - object distance : 187.45
+Driving to pickup point
+ Setting motor to STOP ------
+ Setting motors to REVERSE ||||||
+ Setting motor to STOP ------
+ Setting motors for RIGHT TURN |||***
+  
+  
+ Setting motor to STOP ------
+Raw RGBC :2498,1390,1287,4800
+Color value: 3567Hex: DEFRGB (0-255) :29,16,15,56
+Ultrasonic sensor - object distance : 275.12
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2530,1375,1247,4787
+Color value: 3583Hex: DFFRGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 279.58
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2534,1361,1230,4763
+Color value: 3583Hex: DFFRGB (0-255) :30,16,14,56
+Ultrasonic sensor - object distance : 275.67
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2604,1413,1270,4922
+Color value: 4095Hex: FFFRGB (0-255) :30,16,15,58
+Ultrasonic sensor - object distance : 273.34
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2541,1380,1250,4805
+Color value: 3567Hex: DEFRGB (0-255) :30,16,14,56
+Ultrasonic sensor - object distance : 271.90
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2481,1354,1242,4710
+Color value: 3579Hex: DFBRGB (0-255) :29,16,14,55
+Ultrasonic sensor - object distance : 265.38
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2536,1393,1285,4835
+Color value: 3581Hex: DFDRGB (0-255) :30,16,15,57
+Ultrasonic sensor - object distance : 261.06
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2456,1362,1279,4728
+Color value: 3583Hex: DFFRGB (0-255) :29,16,15,56
+Ultrasonic sensor - object distance : 284.79
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2524,1425,1362,4945
+Color value: 3551Hex: DDFRGB (0-255) :29,16,16,58
+Ultrasonic sensor - object distance : 281.16
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2526,1589,1712,5473
+Color value: 4095Hex: FFFRGB (0-255) :29,18,20,64
+Ultrasonic sensor - object distance : 284.24
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2405,1910,2432,6398
+Color value: 4087Hex: FF7RGB (0-255) :28,22,28,75
+Ultrasonic sensor - object distance : 185.94
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2319,2245,3152,7379
+Color value: 3551Hex: DDFRGB (0-255) :27,26,37,87
+Blue Dominance :
+Ultrasonic sensor - object distance : 155.07
+Driving to pickup point
+ Setting motor to STOP ------
+ Setting motors to REVERSE ||||||
+ Setting motor to STOP ------
+ Setting motors for RIGHT TURN |||***
+  
+  
+ Setting motor to STOP ------
+Raw RGBC :2535,1726,1963,5858
+Color value: 4095Hex: FFFRGB (0-255) :30,20,23,69
+Ultrasonic sensor - object distance : 243.02
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2462,1390,1311,4791
+Color value: 3583Hex: DFFRGB (0-255) :29,16,15,56
+Ultrasonic sensor - object distance : 248.16
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2433,1344,1244,4676
+Color value: 3549Hex: DDDRGB (0-255) :28,15,14,55
+Ultrasonic sensor - object distance : 249.46
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2467,1360,1251,4735
+Color value: 3571Hex: DF3RGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 250.56
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2497,1378,1261,4792
+Color value: 3567Hex: DEFRGB (0-255) :29,16,14,56
+Ultrasonic sensor - object distance : 279.03
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2530,1379,1259,4819
+Color value: 3563Hex: DEBRGB (0-255) :29,16,14,57
+Ultrasonic sensor - object distance : 237.12
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2516,1396,1284,4848
+Color value: 3572Hex: DF4RGB (0-255) :29,16,15,57
+Ultrasonic sensor - object distance : 230.53
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2395,1329,1242,4615
+Color value: 3579Hex: DFBRGB (0-255) :28,15,14,54
+Ultrasonic sensor - object distance : 222.78
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2462,1388,1298,4790
+Color value: 3582Hex: DFERGB (0-255) :29,16,15,56
+Ultrasonic sensor - object distance : 218.05
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2557,1413,1315,4912
+Color value: 3583Hex: DFFRGB (0-255) :30,16,15,58
+Ultrasonic sensor - object distance : 211.73
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2590,1446,1336,4991
+Color value: 4030Hex: FBERGB (0-255) :30,17,15,59
+Ultrasonic sensor - object distance : 203.84
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2687,1511,1376,5184
+Color value: 4095Hex: FFFRGB (0-255) :31,17,16,61
+Ultrasonic sensor - object distance : 198.29
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2552,1447,1351,4956
+Color value: 3583Hex: DFFRGB (0-255) :30,17,16,58
+Ultrasonic sensor - object distance : 193.35
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2480,1397,1316,4797
+Color value: 3573Hex: DF5RGB (0-255) :29,16,15,56
+Ultrasonic sensor - object distance : 181.28
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2435,1377,1308,4731
+Color value: 3583Hex: DFFRGB (0-255) :28,16,15,56
+Ultrasonic sensor - object distance : 209.13
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2348,1301,1245,4524
+Color value: 3581Hex: DFDRGB (0-255) :27,15,14,53
+Ultrasonic sensor - object distance : 169.00
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2299,1283,1234,4462
+Color value: 3579Hex: DFBRGB (0-255) :27,15,14,52
+Ultrasonic sensor - object distance : 160.56
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2367,1315,1247,4577
+Color value: 3583Hex: DFFRGB (0-255) :28,15,14,54
+Ultrasonic sensor - object distance : 121.73
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2362,1299,1229,4546
+Color value: 3583Hex: DFFRGB (0-255) :27,15,14,53
+Ultrasonic sensor - object distance : 147.32
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2353,1281,1193,4515
+Color value: 3513Hex: DB9RGB (0-255) :27,15,14,53
+Ultrasonic sensor - object distance : 140.94
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2327,1256,1162,4462
+Color value: 3583Hex: DFFRGB (0-255) :27,14,13,52
+Ultrasonic sensor - object distance : 135.86
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2362,1260,1145,4495
+Color value: 3583Hex: DFFRGB (0-255) :27,14,13,53
+Ultrasonic sensor - object distance : 161.18
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2366,1261,1142,4502
+Color value: 3583Hex: DFFRGB (0-255) :28,14,13,53
+Ultrasonic sensor - object distance : 129.21
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2339,1236,1114,4425
+Color value: 3583Hex: DFFRGB (0-255) :27,14,13,52
+Ultrasonic sensor - object distance : 121.11
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2418,1273,1123,4555
+Color value: 3579Hex: DFBRGB (0-255) :28,15,13,54
+Ultrasonic sensor - object distance : 114.80
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2413,1261,1115,4527
+Color value: 3583Hex: DFFRGB (0-255) :28,14,13,53
+Ultrasonic sensor - object distance : 141.49
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2367,1237,1102,4451
+Color value: 3583Hex: DFFRGB (0-255) :28,14,13,52
+Ultrasonic sensor - object distance : 144.64
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2289,1241,1203,4494
+Color value: 3323Hex: CFBRGB (0-255) :27,14,14,53
+Ultrasonic sensor - object distance : 127.56
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2079,1987,2932,6782
+Color value: 4095Hex: FFFRGB (0-255) :24,23,34,80
+Blue Dominance :
+Ultrasonic sensor - object distance : 142.93
+Driving to pickup point
+ Setting motor to STOP ------
+ Setting motors to REVERSE ||||||
+ Setting motor to STOP ------
+ Setting motors for RIGHT TURN |||***
+  
+  
+ Setting motor to STOP ------
+Raw RGBC :2387,1265,1134,4514
+Color value: 3583Hex: DFFRGB (0-255) :28,14,13,53
+Ultrasonic sensor - object distance : 110.21
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2448,1302,1163,4580
+Color value: 3487Hex: D9FRGB (0-255) :29,15,13,54
+Ultrasonic sensor - object distance : 113.43
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2405,1263,1129,4520
+Color value: 3567Hex: DEFRGB (0-255) :28,14,13,53
+Ultrasonic sensor - object distance : 110.69
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2457,1309,1168,4654
+Color value: 3485Hex: D9DRGB (0-255) :29,15,13,55
+Ultrasonic sensor - object distance : 108.01
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2429,1305,1178,4630
+Color value: 3583Hex: DFFRGB (0-255) :28,15,13,54
+Ultrasonic sensor - object distance : 108.15
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2432,1279,1143,4581
+Color value: 3583Hex: DFFRGB (0-255) :28,15,13,54
+Ultrasonic sensor - object distance : 101.70
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2556,1353,1183,4821
+Color value: 3583Hex: DFFRGB (0-255) :30,16,14,57
+Ultrasonic sensor - object distance : 96.69
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2464,1284,1120,4599
+Color value: 3556Hex: DE4RGB (0-255) :29,15,13,54
+Ultrasonic sensor - object distance : 115.97
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2384,1233,1087,4442
+Color value: 3583Hex: DFFRGB (0-255) :28,14,12,52
+Ultrasonic sensor - object distance : 117.89
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2263,1157,1028,4194
+Color value: 3287Hex: CD7RGB (0-255) :26,13,12,49
+Ultrasonic sensor - object distance : 104.58
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2117,1063,950,3897
+Color value: 4087Hex: FF7RGB (0-255) :25,12,11,46
+Ultrasonic sensor - object distance : 99.37
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2077,1022,902,3808
+Color value: 3071Hex: BFFRGB (0-255) :24,12,10,45
+Ultrasonic sensor - object distance : 91.27
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2105,1182,1230,4343
+Color value: 3327Hex: CFFRGB (0-255) :24,14,14,51
+Ultrasonic sensor - object distance : 97.31
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1983,1733,2428,5984
+Color value: 4095Hex: FFFRGB (0-255) :23,20,28,70
+Ultrasonic sensor - object distance : 109.86
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2115,1499,1890,5347
+Color value: 4091Hex: FFBRGB (0-255) :25,17,22,63
+Ultrasonic sensor - object distance : 86.88
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2664,1033,862,4383
+Color value: 3967Hex: F7FRGB (0-255) :31,12,10,51
+Ultrasonic sensor - object distance : 98.68
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2421,946,766,3975
+Color value: 3071Hex: BFFRGB (0-255) :28,11,9,47
+Ultrasonic sensor - object distance : 77.83
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2065,882,667,3481
+Color value: 3067Hex: BFBRGB (0-255) :24,10,7,41
+Ultrasonic sensor - object distance : 88.94
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2026,853,632,3391
+Color value: 2047Hex: 7FFRGB (0-255) :24,10,7,40
+Ultrasonic sensor - object distance : 82.08
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2054,886,660,3480
+Color value: 3062Hex: BF6RGB (0-255) :24,10,7,41
+Ultrasonic sensor - object distance : 116.52
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1933,802,597,3214
+Color value: 2047Hex: 7FFRGB (0-255) :22,9,7,38
+Ultrasonic sensor - object distance : 72.34
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1949,808,597,3237
+Color value: 2045Hex: 7FDRGB (0-255) :23,9,7,38
+Ultrasonic sensor - object distance : 66.23
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2026,863,640,3414
+Color value: 2047Hex: 7FFRGB (0-255) :24,10,7,40
+Ultrasonic sensor - object distance : 89.69
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2045,861,629,3422
+Color value: 2045Hex: 7FDRGB (0-255) :24,10,7,40
+Ultrasonic sensor - object distance : 84.69
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2067,875,641,3472
+Color value: 3067Hex: BFBRGB (0-255) :24,10,7,41
+Ultrasonic sensor - object distance : 98.34
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2023,854,630,3396
+Color value: 2039Hex: 7F7RGB (0-255) :23,10,7,40
+Ultrasonic sensor - object distance : 74.67
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2016,862,638,3406
+Color value: 2046Hex: 7FERGB (0-255) :23,10,7,40
+Ultrasonic sensor - object distance : 84.96
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1771,707,526,2894
+Color value: 1775Hex: 6EFRGB (0-255) :20,8,6,34
+Ultrasonic sensor - object distance : 92.99
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1478,489,362,2208
+Color value: 1519Hex: 5EFRGB (0-255) :17,5,4,26
+Ultrasonic sensor - object distance : 117.55
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1487,496,373,2222
+Color value: 1535Hex: 5FFRGB (0-255) :17,5,4,26
+Ultrasonic sensor - object distance : 91.27
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1564,556,452,2408
+Color value: 2044Hex: 7FCRGB (0-255) :18,6,5,28
+Ultrasonic sensor - object distance : 93.95
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1630,659,597,2683
+Color value: 1759Hex: 6DFRGB (0-255) :19,7,7,31
+Ultrasonic sensor - object distance : 96.21
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1700,738,678,2886
+Color value: 1766Hex: 6E6RGB (0-255) :20,8,8,34
+Ultrasonic sensor - object distance : 98.82
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1823,830,756,3178
+Color value: 2047Hex: 7FFRGB (0-255) :21,9,8,37
+Ultrasonic sensor - object distance : 88.32
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2160,1075,948,3945
+Color value: 4087Hex: FF7RGB (0-255) :25,12,11,46
+Ultrasonic sensor - object distance : 88.87
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2156,1123,1031,4046
+Color value: 3183Hex: C6FRGB (0-255) :25,13,12,47
+Ultrasonic sensor - object distance : 93.06
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2244,1176,1066,4230
+Color value: 3326Hex: CFERGB (0-255) :26,13,12,50
+Ultrasonic sensor - object distance : 63.90
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2347,1242,1107,4445
+Color value: 3579Hex: DFBRGB (0-255) :27,14,13,52
+Ultrasonic sensor - object distance : 59.44
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2244,1155,1022,4184
+Color value: 4095Hex: FFFRGB (0-255) :26,13,12,49
+Ultrasonic sensor - object distance : 79.82
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2246,1106,948,4075
+Color value: 4086Hex: FF6RGB (0-255) :26,13,11,48
+Ultrasonic sensor - object distance : 78.51
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2265,1040,1009,4003
+Color value: 4089Hex: FF9RGB (0-255) :26,12,11,47
+Ultrasonic sensor - object distance : 73.23
+Driving to pickup point
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :4319,1252,1231,6459
+Color value: 5375Hex: 14FFRGB (0-255) :51,14,14,76
+Red Dominance :
+Reached pickup point...will wait for pickup
+ Setting motor to STOP ------
+ Setting motor to STOP ------
+Raw RGBC :2063,937,763,3598
+Color value: 3071Hex: BFFRGB (0-255) :24,11,9,42
+Getting ready to travel to base.. reverse in position
+ Setting motors to REVERSE ||||||
+ Setting motors for LEFT PIVOT ***|||
+  
+  
+ Setting motors for LEFT PIVOT ***|||
+  
+  
+ Setting motors for LEFT PIVOT ***|||
+  
+  
+ Setting motors for LEFT PIVOT ***|||
+  
+  
+Raw RGBC :2117,939,717,3620
+Color value: 3055Hex: BEFRGB (0-255) :25,11,8,42
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2117,939,717,3620
+Color value: 3055Hex: BEFRGB (0-255) :25,11,8,42
+Ultrasonic sensor - object distance : 277.66
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2106,920,698,3571
+Color value: 3002Hex: BBARGB (0-255) :24,10,8,42
+Ultrasonic sensor - object distance : 277.32
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2075,903,681,3510
+Color value: 3007Hex: BBFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 264.49
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2040,892,678,3461
+Color value: 2046Hex: 7FERGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 270.39
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2257,1021,769,3893
+Color value: 3069Hex: BFDRGB (0-255) :26,12,9,46
+Ultrasonic sensor - object distance : 252.48
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2271,1025,774,3912
+Color value: 4063Hex: FDFRGB (0-255) :26,12,9,46
+Ultrasonic sensor - object distance : 260.44
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2057,914,714,3528
+Color value: 3035Hex: BDBRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 239.52
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2015,903,730,3493
+Color value: 2015Hex: 7DFRGB (0-255) :23,10,8,41
+Ultrasonic sensor - object distance : 240.20
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1968,1348,1671,4848
+Color value: 2039Hex: 7F7RGB (0-255) :23,15,19,57
+Ultrasonic sensor - object distance : 243.29
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1930,1684,2357,5831
+Color value: 4031Hex: FBFRGB (0-255) :22,19,27,69
+Ultrasonic sensor - object distance : 225.11
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2151,1137,1103,4243
+Color value: 3199Hex: C7FRGB (0-255) :25,13,13,50
+Ultrasonic sensor - object distance : 218.66
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2160,963,739,3703
+Color value: 3059Hex: BF3RGB (0-255) :25,11,8,43
+Ultrasonic sensor - object distance : 214.89
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2106,931,716,3594
+Color value: 3071Hex: BFFRGB (0-255) :24,11,8,42
+Ultrasonic sensor - object distance : 208.78
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2098,927,717,3578
+Color value: 3071Hex: BFFRGB (0-255) :24,10,8,42
+Ultrasonic sensor - object distance : 208.17
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1988,872,689,3386
+Color value: 2045Hex: 7FDRGB (0-255) :23,10,8,40
+Ultrasonic sensor - object distance : 203.30
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2050,912,718,3515
+Color value: 3038Hex: BDERGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 163.44
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2182,984,759,3757
+Color value: 3071Hex: BFFRGB (0-255) :25,11,8,44
+Ultrasonic sensor - object distance : 187.38
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2113,949,739,3631
+Color value: 3063Hex: BF7RGB (0-255) :25,11,8,43
+Ultrasonic sensor - object distance : 152.12
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2085,920,720,3556
+Color value: 3069Hex: BFDRGB (0-255) :24,10,8,42
+Ultrasonic sensor - object distance : 136.75
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2101,936,734,3602
+Color value: 3071Hex: BFFRGB (0-255) :24,11,8,42
+Ultrasonic sensor - object distance : 138.95
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1962,861,688,3342
+Color value: 2047Hex: 7FFRGB (0-255) :23,10,8,39
+Ultrasonic sensor - object distance : 127.77
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2028,903,709,3473
+Color value: 2031Hex: 7EFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 166.25
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2035,890,692,3451
+Color value: 2047Hex: 7FFRGB (0-255) :24,10,8,40
+Ultrasonic sensor - object distance : 155.76
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2017,916,725,3478
+Color value: 2037Hex: 7F5RGB (0-255) :23,10,8,41
+Ultrasonic sensor - object distance : 158.84
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1971,997,783,3598
+Color value: 2047Hex: 7FFRGB (0-255) :23,11,9,42
+Ultrasonic sensor - object distance : 151.16
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1987,1877,1437,5184
+Color value: 2015Hex: 7DFRGB (0-255) :23,22,17,61
+Ultrasonic sensor - object distance : 149.45
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2056,990,770,4124
+Color value: 3038Hex: BDERGB (0-255) :24,11,9,48
+Ultrasonic sensor - object distance : 144.44
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1980,870,680,3367
+Color value: 2046Hex: 7FERGB (0-255) :23,10,8,39
+Ultrasonic sensor - object distance : 140.66
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1947,856,682,3321
+Color value: 2043Hex: 7FBRGB (0-255) :23,10,8,39
+Ultrasonic sensor - object distance : 134.22
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1897,818,649,3202
+Color value: 2043Hex: 7FBRGB (0-255) :22,9,7,37
+Ultrasonic sensor - object distance : 201.86
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2007,875,683,3399
+Color value: 2047Hex: 7FFRGB (0-255) :23,10,8,40
+Ultrasonic sensor - object distance : 128.59
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1966,835,647,3282
+Color value: 2031Hex: 7EFRGB (0-255) :23,9,7,38
+Ultrasonic sensor - object distance : 122.14
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1759,715,576,2871
+Color value: 1759Hex: 6DFRGB (0-255) :20,8,6,34
+Ultrasonic sensor - object distance : 90.17
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1630,636,535,2589
+Color value: 1663Hex: 67FRGB (0-255) :19,7,6,30
+Ultrasonic sensor - object distance : 92.99
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1651,763,642,2844
+Color value: 1787Hex: 6FBRGB (0-255) :19,9,7,33
+Ultrasonic sensor - object distance : 99.02
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1768,725,592,2880
+Color value: 1789Hex: 6FDRGB (0-255) :20,8,7,34
+Ultrasonic sensor - object distance : 172.29
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1874,797,641,3117
+Color value: 2015Hex: 7DFRGB (0-255) :22,9,7,36
+Ultrasonic sensor - object distance : 137.85
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2093,927,705,3561
+Color value: 3071Hex: BFFRGB (0-255) :24,10,8,42
+Ultrasonic sensor - object distance : 230.32
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2108,942,719,3607
+Color value: 3071Hex: BFFRGB (0-255) :24,11,8,42
+Ultrasonic sensor - object distance : 132.43
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1904,831,653,3228
+Color value: 2047Hex: 7FFRGB (0-255) :22,9,7,38
+Ultrasonic sensor - object distance : 128.45
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1992,878,682,3393
+Color value: 2030Hex: 7EERGB (0-255) :23,10,8,40
+Ultrasonic sensor - object distance : 121.39
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2046,910,703,3499
+Color value: 2047Hex: 7FFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 116.17
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1954,837,641,3281
+Color value: 2023Hex: 7E7RGB (0-255) :23,9,7,38
+Ultrasonic sensor - object distance : 111.92
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1968,851,655,3321
+Color value: 2047Hex: 7FFRGB (0-255) :23,10,7,39
+Ultrasonic sensor - object distance : 110.14
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2006,866,666,3381
+Color value: 2046Hex: 7FERGB (0-255) :23,10,7,40
+Ultrasonic sensor - object distance : 107.19
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2011,880,678,3415
+Color value: 2047Hex: 7FFRGB (0-255) :23,10,8,40
+Ultrasonic sensor - object distance : 118.16
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2085,915,686,3539
+Color value: 3007Hex: BBFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 114.25
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2249,1006,740,3845
+Color value: 3055Hex: BEFRGB (0-255) :26,11,8,45
+Ultrasonic sensor - object distance : 118.64
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2276,1068,786,3988
+Color value: 4094Hex: FFERGB (0-255) :26,12,9,47
+Ultrasonic sensor - object distance : 108.22
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2096,1397,1047,4422
+Color value: 3447Hex: D77RGB (0-255) :24,16,12,52
+Ultrasonic sensor - object distance : 85.30
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2003,1819,1375,5095
+Color value: 2015Hex: 7DFRGB (0-255) :23,21,16,60
+Ultrasonic sensor - object distance : 80.78
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1969,1802,1360,5030
+Color value: 2043Hex: 7FBRGB (0-255) :23,21,16,59
+Ultrasonic sensor - object distance : 94.22
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1915,991,760,3536
+Color value: 2047Hex: 7FFRGB (0-255) :22,11,9,41
+Ultrasonic sensor - object distance : 89.42
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1951,854,651,3311
+Color value: 2015Hex: 7DFRGB (0-255) :23,10,7,39
+Ultrasonic sensor - object distance : 84.55
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1976,844,647,3314
+Color value: 2047Hex: 7FFRGB (0-255) :23,9,7,39
+Ultrasonic sensor - object distance : 78.17
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1999,846,646,3336
+Color value: 1999Hex: 7CFRGB (0-255) :23,10,7,39
+Ultrasonic sensor - object distance : 76.87
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2064,885,667,3465
+Color value: 3071Hex: BFFRGB (0-255) :24,10,7,41
+Ultrasonic sensor - object distance : 67.67
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2064,897,681,3492
+Color value: 3001Hex: BB9RGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 252.35
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2007,849,645,3350
+Color value: 2007Hex: 7D7RGB (0-255) :23,10,7,39
+Ultrasonic sensor - object distance : 55.67
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2045,892,681,3466
+Color value: 2045Hex: 7FDRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 53.68
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1963,838,646,3291
+Color value: 2031Hex: 7EFRGB (0-255) :23,9,7,39
+Ultrasonic sensor - object distance : 57.04
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1612,612,490,2532
+Color value: 2030Hex: 7EERGB (0-255) :19,7,5,30
+Ultrasonic sensor - object distance : 71.10
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1656,675,835,2689
+Color value: 2043Hex: 7FBRGB (0-255) :19,7,9,31
+Ultrasonic sensor - object distance : 239.38
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2199,996,784,3815
+Color value: 3063Hex: BF7RGB (0-255) :26,11,9,45
+Ultrasonic sensor - object distance : 242.95
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1805,726,560,2944
+Color value: 2047Hex: 7FFRGB (0-255) :21,8,6,34
+Ultrasonic sensor - object distance : 131.47
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1901,789,601,3153
+Color value: 1917Hex: 77DRGB (0-255) :22,9,7,37
+Ultrasonic sensor - object distance : 129.76
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2028,889,679,3459
+Color value: 2047Hex: 7FFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 128.11
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2024,873,658,3420
+Color value: 2043Hex: 7FBRGB (0-255) :23,10,7,40
+Ultrasonic sensor - object distance : 125.50
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2011,880,669,3422
+Color value: 2047Hex: 7FFRGB (0-255) :23,10,7,40
+Ultrasonic sensor - object distance : 125.85
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1966,854,649,3333
+Color value: 2047Hex: 7FFRGB (0-255) :23,10,7,39
+Ultrasonic sensor - object distance : 127.77
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2019,874,658,3417
+Color value: 2043Hex: 7FBRGB (0-255) :23,10,7,40
+Ultrasonic sensor - object distance : 119.33
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2097,943,719,3617
+Color value: 3071Hex: BFFRGB (0-255) :24,11,8,42
+Ultrasonic sensor - object distance : 118.99
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2135,948,710,3646
+Color value: 3063Hex: BF7RGB (0-255) :25,11,8,43
+Ultrasonic sensor - object distance : 176.27
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2091,915,681,3542
+Color value: 3003Hex: BBBRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 124.54
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2190,981,737,3757
+Color value: 3071Hex: BFFRGB (0-255) :25,11,8,44
+Ultrasonic sensor - object distance : 165.02
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2115,931,698,3691
+Color value: 3067Hex: BFBRGB (0-255) :25,11,8,43
+Ultrasonic sensor - object distance : 163.37
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2159,958,720,3678
+Color value: 3071Hex: BFFRGB (0-255) :25,11,8,43
+Ultrasonic sensor - object distance : 162.20
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2135,942,710,3629
+Color value: 3071Hex: BFFRGB (0-255) :25,11,8,43
+Ultrasonic sensor - object distance : 209.61
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2125,942,715,3623
+Color value: 3055Hex: BEFRGB (0-255) :25,11,8,42
+Ultrasonic sensor - object distance : 206.31
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2129,951,724,3645
+Color value: 3063Hex: BF7RGB (0-255) :25,11,8,43
+Ultrasonic sensor - object distance : 203.02
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2081,918,701,3541
+Color value: 3007Hex: BBFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 199.11
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2054,899,684,3479
+Color value: 2991Hex: BAFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 196.50
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2106,925,701,3569
+Color value: 3007Hex: BBFRGB (0-255) :24,10,8,42
+Ultrasonic sensor - object distance : 192.59
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2070,904,681,3508
+Color value: 3007Hex: BBFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 188.82
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2097,917,685,3551
+Color value: 3005Hex: BBDRGB (0-255) :24,10,8,42
+Ultrasonic sensor - object distance : 185.87
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2068,906,680,3503
+Color value: 3006Hex: BBERGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 182.72
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2129,945,711,3633
+Color value: 3063Hex: BF7RGB (0-255) :25,11,8,43
+Ultrasonic sensor - object distance : 62.12
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2065,904,680,3497
+Color value: 3001Hex: BB9RGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 175.38
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2120,924,688,3581
+Color value: 3068Hex: BFCRGB (0-255) :25,10,8,42
+Ultrasonic sensor - object distance : 173.18
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2358,1001,768,3969
+Color value: 3071Hex: BFFRGB (0-255) :27,11,9,47
+Ultrasonic sensor - object distance : 170.23
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3372,960,844,4952
+Color value: 4076Hex: FECRGB (0-255) :39,11,9,58
+Ultrasonic sensor - object distance : 169.48
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3090,950,818,4648
+Color value: 4022Hex: FB6RGB (0-255) :36,11,9,55
+Ultrasonic sensor - object distance : 166.87
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2063,867,664,3448
+Color value: 3071Hex: BFFRGB (0-255) :24,10,7,40
+Ultrasonic sensor - object distance : 162.68
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2043,894,683,3478
+Color value: 2047Hex: 7FFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 160.22
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2123,928,688,3600
+Color value: 3067Hex: BFBRGB (0-255) :25,10,8,42
+Ultrasonic sensor - object distance : 156.24
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2069,886,662,3478
+Color value: 3063Hex: BF7RGB (0-255) :24,10,7,41
+Ultrasonic sensor - object distance : 152.88
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2112,921,685,3582
+Color value: 3069Hex: BFDRGB (0-255) :25,10,8,42
+Ultrasonic sensor - object distance : 151.64
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2077,903,678,3523
+Color value: 3007Hex: BBFRGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 148.90
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2028,869,653,3409
+Color value: 2029Hex: 7EDRGB (0-255) :24,10,7,40
+Ultrasonic sensor - object distance : 152.67
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1680,641,498,2654
+Color value: 2035Hex: 7F3RGB (0-255) :19,7,5,31
+Ultrasonic sensor - object distance : 165.77
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1774,637,510,2749
+Color value: 2047Hex: 7FFRGB (0-255) :21,7,6,32
+Ultrasonic sensor - object distance : 160.70
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2029,883,701,3441
+Color value: 2047Hex: 7FFRGB (0-255) :24,10,8,40
+Ultrasonic sensor - object distance : 179.01
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1945,793,617,3197
+Color value: 2041Hex: 7F9RGB (0-255) :23,9,7,37
+Ultrasonic sensor - object distance : 145.67
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2524,909,737,4001
+Color value: 3069Hex: BFDRGB (0-255) :29,10,8,47
+Ultrasonic sensor - object distance : 141.42
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3534,989,881,5178
+Color value: 4095Hex: FFFRGB (0-255) :41,11,10,61
+Ultrasonic sensor - object distance : 160.56
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3583,1033,919,5309
+Color value: 4095Hex: FFFRGB (0-255) :42,12,10,62
+Ultrasonic sensor - object distance : 141.21
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3298,963,844,4888
+Color value: 4079Hex: FEFRGB (0-255) :39,11,9,57
+Ultrasonic sensor - object distance : 139.57
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3075,1027,876,4783
+Color value: 3951Hex: F6FRGB (0-255) :36,12,10,56
+Ultrasonic sensor - object distance : 142.93
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2996,920,791,4502
+Color value: 3007Hex: BBFRGB (0-255) :35,10,9,53
+Ultrasonic sensor - object distance : 138.74
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3528,1021,904,5227
+Color value: 4093Hex: FFDRGB (0-255) :41,12,10,61
+Ultrasonic sensor - object distance : 142.65
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3615,1031,919,5345
+Color value: 3999Hex: F9FRGB (0-255) :42,12,10,63
+Ultrasonic sensor - object distance : 138.40
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3514,997,888,5184
+Color value: 4095Hex: FFFRGB (0-255) :41,11,10,61
+Ultrasonic sensor - object distance : 123.99
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3572,1005,892,5245
+Color value: 4093Hex: FFDRGB (0-255) :42,11,10,62
+Ultrasonic sensor - object distance : 130.24
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3808,1051,945,5571
+Color value: 4091Hex: FFBRGB (0-255) :45,12,11,66
+Ultrasonic sensor - object distance : 139.84
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3591,997,890,5251
+Color value: 4095Hex: FFFRGB (0-255) :42,11,10,62
+Ultrasonic sensor - object distance : 125.85
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3470,982,869,5100
+Color value: 4095Hex: FFFRGB (0-255) :41,11,10,60
+Ultrasonic sensor - object distance : 137.37
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3420,989,869,5051
+Color value: 4093Hex: FFDRGB (0-255) :40,11,10,59
+Ultrasonic sensor - object distance : 139.91
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3176,948,820,4737
+Color value: 4092Hex: FFCRGB (0-255) :37,11,9,56
+Ultrasonic sensor - object distance : 138.33
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2995,945,801,4553
+Color value: 2995Hex: BB3RGB (0-255) :35,11,9,53
+Ultrasonic sensor - object distance : 136.34
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2974,1004,844,4637
+Color value: 3070Hex: BFERGB (0-255) :35,11,9,54
+Ultrasonic sensor - object distance : 135.38
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2933,975,814,4533
+Color value: 3071Hex: BFFRGB (0-255) :34,11,9,53
+Ultrasonic sensor - object distance : 136.69
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2948,990,830,4583
+Color value: 3070Hex: BFERGB (0-255) :34,11,9,54
+Ultrasonic sensor - object distance : 135.45
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2968,939,795,4523
+Color value: 3003Hex: BBBRGB (0-255) :35,11,9,53
+Ultrasonic sensor - object distance : 134.56
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2945,931,783,4487
+Color value: 2991Hex: BAFRGB (0-255) :34,11,9,53
+Ultrasonic sensor - object distance : 135.66
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2875,941,784,4418
+Color value: 3007Hex: BBFRGB (0-255) :34,11,9,52
+Ultrasonic sensor - object distance : 135.59
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2960,1003,838,4614
+Color value: 3071Hex: BFFRGB (0-255) :35,11,9,54
+Ultrasonic sensor - object distance : 131.54
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3360,973,853,4971
+Color value: 4093Hex: FFDRGB (0-255) :39,11,10,58
+Ultrasonic sensor - object distance : 137.85
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3481,991,875,5142
+Color value: 4095Hex: FFFRGB (0-255) :41,11,10,60
+Ultrasonic sensor - object distance : 128.04
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3594,1007,891,5274
+Color value: 4095Hex: FFFRGB (0-255) :42,11,10,62
+Ultrasonic sensor - object distance : 65.00
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3556,989,875,5207
+Color value: 4095Hex: FFFRGB (0-255) :42,11,10,61
+Ultrasonic sensor - object distance : 64.79
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3737,1068,948,5532
+Color value: 4029Hex: FBDRGB (0-255) :44,12,11,65
+Ultrasonic sensor - object distance : 120.08
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :3435,1019,886,5128
+Color value: 4095Hex: FFFRGB (0-255) :40,12,10,60
+Ultrasonic sensor - object distance : 121.18
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2459,945,743,3994
+Color value: 3071Hex: BFFRGB (0-255) :29,11,8,47
+Ultrasonic sensor - object distance : 127.42
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2084,874,660,3475
+Color value: 3070Hex: BFERGB (0-255) :24,10,7,41
+Ultrasonic sensor - object distance : 130.79
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2140,953,715,3618
+Color value: 3071Hex: BFFRGB (0-255) :25,11,8,42
+Ultrasonic sensor - object distance : 129.28
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2107,907,674,3554
+Color value: 3003Hex: BBBRGB (0-255) :24,10,7,42
+Ultrasonic sensor - object distance : 136.21
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2112,911,677,3564
+Color value: 3055Hex: BEFRGB (0-255) :25,10,8,42
+Ultrasonic sensor - object distance : 122.42
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2114,923,694,3597
+Color value: 3071Hex: BFFRGB (0-255) :25,10,8,42
+Ultrasonic sensor - object distance : 123.58
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2107,898,664,3533
+Color value: 3003Hex: BBBRGB (0-255) :24,10,7,41
+Ultrasonic sensor - object distance : 121.04
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2128,927,691,3611
+Color value: 3071Hex: BFFRGB (0-255) :25,10,8,42
+Ultrasonic sensor - object distance : 120.84
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2012,864,650,3392
+Color value: 2046Hex: 7FERGB (0-255) :23,10,7,40
+Ultrasonic sensor - object distance : 119.26
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2001,849,639,3354
+Color value: 2047Hex: 7FFRGB (0-255) :23,10,7,39
+Ultrasonic sensor - object distance : 117.48
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2065,899,679,3511
+Color value: 2999Hex: BB7RGB (0-255) :24,10,8,41
+Ultrasonic sensor - object distance : 123.24
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2015,871,659,3411
+Color value: 2047Hex: 7FFRGB (0-255) :23,10,7,40
+Ultrasonic sensor - object distance : 121.04
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :1997,850,640,3353
+Color value: 2015Hex: 7DFRGB (0-255) :23,10,7,39
+Ultrasonic sensor - object distance : 125.02
+ Setting motor to FORWARD ******
+  
+  
+Raw RGBC :2102,925,697,3589
+Color value: 3007Hex: BBFRGB (0-255) :24,10,8,42
+Ultrasonic sensor - object distance : 125.50
+ Setting motor to FORWARD ******
+  
+  

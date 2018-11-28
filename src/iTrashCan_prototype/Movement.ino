@@ -1,7 +1,7 @@
 //
 // ©Copyright 2018, All Rights Reserved.
 //
-// ColorDefinitions.h created by spinomishra on 11/4/2018T12:28 PM
+// Movement.ino created by spinomishra on 11/4/2018T12:28 PM
 //
 
 Markers DetermineMarker(Color color)
@@ -138,10 +138,10 @@ void RightTurn()
 
 	analogWrite(leftMotorEnablePin, 255);
 	analogWrite(rightMotorEnablePin, 150);	// lowering the speed of right motor by providing less pwms
-	digitalWrite(leftMotorInput1, LOW);
-	digitalWrite(leftMotorInput2, HIGH);
-	digitalWrite(rightMotorInput1, HIGH);
-	digitalWrite(rightMotorInput2, LOW);
+	digitalWrite(leftMotorInput1, HIGH);
+	digitalWrite(leftMotorInput2, LOW);
+	digitalWrite(rightMotorInput1, LOW);
+	digitalWrite(rightMotorInput2, HIGH);
 }
 
 void LeftTurn()
@@ -150,12 +150,12 @@ void LeftTurn()
 	Serial.println("  ");
 	Serial.println("  ");
 
-	analogWrite(leftMotorEnablePin, 150); // lowering the speed of left motor by providing less pwms
-	analogWrite(rightMotorEnablePin, 255);
-	digitalWrite(leftMotorInput1, HIGH);
-	digitalWrite(leftMotorInput2, LOW);
-	digitalWrite(rightMotorInput1, LOW);
-	digitalWrite(rightMotorInput2, HIGH);
+	analogWrite(leftMotorEnablePin, 255); // lowering the speed of left motor by providing less pwms
+	analogWrite(rightMotorEnablePin, 150);
+	digitalWrite(leftMotorInput1, LOW);
+	digitalWrite(leftMotorInput2,HIGH);
+	digitalWrite(rightMotorInput1, HIGH);
+	digitalWrite(rightMotorInput2, LOW);
 }
 
 void StopMovement()
@@ -185,15 +185,17 @@ void PivotRight()
 	Serial.println("  ");
 	Serial.println("  ");
 
-	analogWrite(leftMotorEnablePin, 200);
-	analogWrite(rightMotorEnablePin, 160);	// lowering the speed of right motor by providing less pwms
+	analogWrite(leftMotorEnablePin, 90);
+	analogWrite(rightMotorEnablePin, 65);	// lowering the speed of right motor by providing less pwms
 	digitalWrite(leftMotorInput1, LOW);
 	digitalWrite(leftMotorInput2, HIGH);
 	digitalWrite(rightMotorInput1, HIGH);
 	digitalWrite(rightMotorInput2, LOW);
-	delay(500);
-	StopMovement();
-	delay(20);
+	delay(250);
+	digitalWrite(leftMotorInput1, LOW);
+	digitalWrite(leftMotorInput2, LOW);
+	digitalWrite(rightMotorInput1, LOW);
+	digitalWrite(rightMotorInput2, LOW);
 }
 
 void PivotLeft()
@@ -202,22 +204,25 @@ void PivotLeft()
 	Serial.println("  ");
 	Serial.println("  ");
 
-	analogWrite(leftMotorEnablePin, 160);
-	analogWrite(rightMotorEnablePin, 200);	
+	analogWrite(leftMotorEnablePin, 180);
+	analogWrite(rightMotorEnablePin, 180);	
 	digitalWrite(leftMotorInput1, HIGH);
 	digitalWrite(leftMotorInput2, LOW);
 	digitalWrite(rightMotorInput1, LOW);
 	digitalWrite(rightMotorInput2, HIGH);
 	delay(500);
-	StopMovement();
+	digitalWrite(leftMotorInput1, LOW);
+	digitalWrite(leftMotorInput2, LOW);
+	digitalWrite(rightMotorInput1, LOW);
+	digitalWrite(rightMotorInput2, LOW);
 	delay(20);
 }
 
 void ReverseInPosition()
 {
-	for (int i = 0; i<4; i++)
+	for (int i = 0; i < 4; i++)
 	{
-		PivotRight();
-		delay(20);
+		PivotLeft();
+		delay(500);
 	}
 }

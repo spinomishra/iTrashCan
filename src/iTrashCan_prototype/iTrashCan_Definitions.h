@@ -1,7 +1,7 @@
 //
 // ©Copyright 2018, All Rights Reserved.
 //
-// ColorDefinitions.h created by spinomishra on 10/29/2018T10:43 PM
+// iTrashCan_Definitions.h created by spinomishra on 10/29/2018T10:43 PM
 //
 #pragma once
 

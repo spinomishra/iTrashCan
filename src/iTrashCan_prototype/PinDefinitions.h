@@ -1,19 +1,19 @@
 ﻿//
 // ©Copyright 2018, All Rights Reserved.
 //
-// ColorDefinitions.h created by spinomishra on 10/‎29/‎2018T‏‎6:00 PM
+// PinDefinitions.h created by spinomishra on 10/‎29/‎2018T‏‎6:00 PM
 //
 #pragma once
 
 // Left Motor
-int leftMotorEnablePin =3;
-int leftMotorInput1 = 5;
-int leftMotorInput2 = 4;
+int leftMotorEnablePin =11;
+int leftMotorInput1 = 7;
+int leftMotorInput2 = 8;
 
 // Right Motor
-int rightMotorEnablePin = 11;
-int rightMotorInput1 = 7;
-int rightMotorInput2 = 8;
+int rightMotorEnablePin = 3;
+int rightMotorInput1 = 5;
+int rightMotorInput2 = 4;
 
 // Ultrasonic sensor
 #define TRIGGER_PIN				13  /* sends sound wave */

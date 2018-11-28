@@ -1,14 +1,14 @@
-
+//
+// testing motor for forward movement, left, right turns and pivots
+//
 
 
 // Motor A - right
-
 int enA = 3;
 int in1 = 5;
 int in2 = 4;
 
 // Motor B - left
-
 int enB = 11;
 int in3 = 7;
 int in4 = 8;
@@ -64,17 +64,6 @@ void setup()
 
 void loop()
 {
-  if (doonce == true)
-  {
-    for (int i=0; i<4; i++)
-    {
-      PivotRight() ;
-      delay(20) ;
-    }
-    
-    doonce = false ;
-  }
-  /*
   // Turn on Motor A forwards
   digitalWrite(in1,HIGH);
   digitalWrite(in2,LOW);
@@ -151,6 +140,5 @@ void loop()
   analogWrite(enA,0);
   analogWrite(enB,0);
   Serial.println("Off");
-  delay(25000);  */
-  }
-  
+  delay(25000);
+}
