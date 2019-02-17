@@ -7,17 +7,23 @@
 
 #include "ColorDefinitions.h"
 
-#define OUTOFRANGE 401
-#define SAFEDISTANCE 15
-#define PASSTHRUDISTANCE 50
+// Normal motor pwms for left and right wheels
 #define NORMALSPEED_LEFT 60
-#define NORMALSPEED_RIGHT 60
+#define NORMALSPEED_RIGHT 50
+
+// Motors PWMs for reversing 
+#define REVERSESPEED_LEFT 70	/*90*/
+#define REVERSESPEED_RIGHT 60	/*80*/
+
+// Ultrasonic ranges (cm)
+#define OUTOFRANGE 401
+#define SAFEDISTANCE 45	
+#define PASSTHRUDISTANCE 50
+
 #define SLOW_WHEEL_POWER  40
 #define USS_SERVO_BASE_ANGLE 80
 #define SIMULATION_WAIT_TIME  15	
 #define MILLISECONDS	1000
-#define REVERSESPEED_LEFT 70
-#define REVERSESPEED_RIGHT 70
 
 struct ControlData {
 	Color color;

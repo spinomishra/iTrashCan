@@ -82,7 +82,7 @@ MoveDirection FindClearPath(int& turnangle)
 
 		if (distance >= PASSTHRUDISTANCE)
 		{
-			// next movement direction = left and angle of turn = BaseAngle-90
+			// next movement direction = left and angle of turn = BaseAngle-80
 			turnangle = j - USS_SERVO_BASE_ANGLE;
 			turnDirection = MoveDirection::TurnLeft;
 			break;

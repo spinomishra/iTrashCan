@@ -10,6 +10,8 @@ struct Color {
 	uint16_t G;
 	uint16_t B;
 	uint16_t WhiteLight;
+	uint16_t Lux;
+	uint16_t Temp;
 };
 
 enum ColorMarkers {
